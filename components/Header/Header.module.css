@@ -39,12 +39,12 @@
     display: flex;
     justify-content: end;
     width: 20%;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 .buttons svg{
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
     cursor: pointer;
 }
 

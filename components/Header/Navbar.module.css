@@ -51,4 +51,5 @@
     gap: 2rem;
     background: white;
     padding: 0.4rem 1rem;
+    z-index: 900;
 }
