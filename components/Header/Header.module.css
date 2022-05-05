@@ -1,21 +1,53 @@
 .container{
-    display: flex;
+    position: relative;
     border-bottom: 2px solid black;
     width: 100%;
-    background: rgb(100, 200, 200);
+    height: 3.25rem;
+}
+
+.limit-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 975px;
 }
 
 .logo{
-    display: inline-block;
+    display: block;
+    width: 20%;
+    padding: 0 2%;
     text-align: center;
-    width: 15%;
-    margin-right: 5%;
-    border: 1px solid yellow;
 }
 
 .logo h1{
     font-weight: bold;
     font-size: 1.3rem;
-    padding: 0 2%;
-    word-break: none;
+}
+
+.logo_line{
+    height: 3px;
+    width: 35%;
+    margin: 0 55%;
+    border-bottom: 1px solid black;
+    background: black;
+}
+
+.buttons{
+    display: flex;
+    justify-content: end;
+    width: 20%;
+    gap: 1rem;
+}
+
+.buttons svg{
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.buttons svg:hover{
+    transform: scale(1.05);
 }

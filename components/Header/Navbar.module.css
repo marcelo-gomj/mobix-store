@@ -1,11 +1,54 @@
 .container{
     display: flex;
-    width: 100%;
+    align-items: center;
+    height: 100%;
 }
+
 .menu{
+    display: flex;
+    position: relative;
+}
+
+.menu > li{
+    font-weight: 400;
+    padding: 1.5% 4%;
+    outline: 2px solid transparent;
+    user-select: none;
+}
+
+.menu > li + li{
+    margin-left: 1.5rem;
+}
+
+.menu > li:hover{
+    outline-color: black;
+    transition: outline 300ms linear;
+}
+.menu > li:first-child{
+    display: flex;
+    height: 100%;
+}
+.menu > span:hover ul{
     display: flex;
 }
 
-.menu li + li{
-    margin: 0 2%;
+.menu li:hover ul{
+    display: flex;
+}
+
+.menu_select{
+    display: flex;
+    position: absolute;
+    padding: calc(4% + 4px) 12%;
+}
+
+.type_clothes{
+    display: none;
+    position: absolute;
+    border: 2px solid black;
+    left: 0;
+    top: calc(130% - 2px);
+    gap: 2rem;
+    background: white;
+    padding: 0.4rem 1rem;
 }

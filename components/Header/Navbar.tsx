@@ -7,10 +7,19 @@ export function Navbar(){
         <nav className={navbar.container}>
             <ul className={navbar.menu}>
                 <li>
-                    <Link href="/clothes">Roupas</Link>
+                    <span>Roupas</span>
+                    <div className={navbar.menu_select}></div>
+                    <ul className={navbar.type_clothes}>
+                        <li>
+                            <Link href="/fundo">Feminino</Link>
+                        </li>
+                        <li>
+                            <Link href="/fest">Mascúlino</Link>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <Link href="/eletronics">Eletronicos</Link>
+                    <Link href="/eletronics">Eletrônicos</Link>
                 </li>
                 <li>
                     <Link href="/jewerls">Joías</Link>
