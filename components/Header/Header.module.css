@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    border-bottom: 2px solid black;
+    width: 100%;
+    background: rgb(100, 200, 200);
+}
+
+.logo{
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    margin-right: 5%;
+    border: 1px solid yellow;
+}
+
+.logo h1{
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0 2%;
+    word-break: none;
+}

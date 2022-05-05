@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    width: 100%;
+}
+.menu{
+    display: flex;
+}
+
+.menu li + li{
+    margin: 0 2%;
+}
