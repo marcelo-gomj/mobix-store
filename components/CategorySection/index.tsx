@@ -1,6 +1,5 @@
-
-
 import { ProductsProps } from '../../pages';
+import { ProductsItem } from './ProductItem';
 
 import category from './category.module.css';
 
@@ -10,16 +9,15 @@ interface CategorySectionProps {
 }
 
 export function CategorySection({title, products} : CategorySectionProps){
-
     return (
-        <section>
+        <section className={category.container}>
             <header>
-                <h3>{title}</h3>
+                <h2>{title}</h2>
             </header>
-            <ul>
+            <ul className={category.list}>
                 {
                     products.map((product) => {
-                        return <li>{ product.title }</li>
+                        return <ProductsItem product={product} />;
                     })
                 }
             </ul>
